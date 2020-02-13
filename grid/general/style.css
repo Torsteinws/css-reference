@@ -1,0 +1,139 @@
+.initialize-grid {
+    display: grid;
+}
+.initialize-grid-items > div {
+    border: 1px solid #888;
+    text-align: center;
+}
+.button-layout button {
+    margin: 0px 5px 10px 0px;
+}
+/* --------------------------------- Grid 1 --------------------- */
+/* Defines a grid with three columns.
+The third column is twice as big as the first two */
+#grid1 {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+/* --------------------------------- Grid 2 --------------------- */
+/* Defines that the grid should have two columsn with equal size, 
+    and three rows where the second row is twice as large as the rest.
+    teh grid-template-rows property must be used in conjunction with the grid-templace-column.
+    if not, the grid template-column defaults to 1fr */
+#grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+/* ---------------------------------- Grid 3 --------------------- */
+#grid3 {
+    border: 2px dotted black;
+}
+.grid3-full-size {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid3-smal-size {
+    grid-template-columns: 100px 100px 100px;
+}
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* ---------------------------------- Grid 4 --------------------- */
+#grid4 {
+    height: 350px;
+    border: 2px dotted black;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+.align-content-start {
+    align-content: start;
+}
+.align-content-end {
+    align-content: end;
+}
+.align-content-center {
+    align-content: center;
+}
+.align-content-space-between {
+    align-content: space-between;
+}
+.align-content-space-around {
+    align-content: space-around;
+}
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+
+/* --------------------------- Grid 5 ---------------------------*/
+#grid5 {
+    border: 2px dotted black;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-gap-height {
+    row-gap: 50px;
+}
+.column-gap-width {
+    column-gap: 50px;
+}
+.gap-height-width {
+    gap: 10px 100px;
+}
+
+
+/* --------------------------- Grid 6 ------------------------- */
+#grid6 {
+
+    border: 2px dotted black;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+/* #grid6-item1{
+    grid-column: 2 / span 3;
+} */
+
+/* #grid6-item3{
+    grid-row: 3 / 5;
+} */
+
+.grid-row-postion-1{
+    grid-row: 1; 
+}
+.grid-column-position-1{
+    grid-column: 1;
+}
+.grid-column-1-3 {
+    grid-column: 1 / 3;
+}
+.grid-row-1-3 {
+    grid-row: 1 / 3;
+}
+.grid-column-1-span-3 {
+    grid-column: 1 / span 3;
+}
+.grid-row-1-span-3 {
+    grid-row: 1 / span 3;
+}
+

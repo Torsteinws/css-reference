@@ -1,0 +1,52 @@
+/* Initializes the counters that are goind to be used in the document */
+body {
+    counter-reset: section;
+    counter-reset: sub-section;
+    counter-reset: sub-sub-section;
+}
+
+/* The counter corresponding to the current h tag is incrementet, 
+then all child counters are reset*/
+h1 {
+    counter-increment: section;
+    counter-reset: sub-section;
+    counter-reset: sub-sub-section;
+}
+h2 {
+    counter-increment: sub-section;
+    counter-reset: sub-sub-section;    
+}
+h3 {
+    counter-increment: sub-sub-section;
+}
+
+/* Formats and styles how the counters should be added to the headings*/
+h1::before {
+    color:red;
+    content: counter(section) ": ";
+}
+h2::before {
+    color: green;
+    padding: 0px 0px 0px 50px;
+    content: counter(section) "." counter(sub-section) ": ";
+}
+h3::before {
+    color: blue;
+    padding: 0px 0px 0px 100px;
+    content: counter(section) "." counter(sub-section) "." counter(sub-sub-section) ": ";
+}
+
+/* ------------------------------------- Counters for the lists ---------------------*/
+/* A new counter with the name list is instanciated every for every time an ol occurs*/
+ol {
+    counter-reset: list;
+    list-style-type: none;
+  }
+
+li::before {
+    /* Only the last instanciated counter with the name list is incrementet */
+    counter-increment: list;
+    /* Display every instanciated counter with the name list, and separates them with a "." (dot) */
+    /* If only one counter is instanciated, the separator will not be displayed */
+    content: counters(list, ".") ": ";
+  }

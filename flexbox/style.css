@@ -1,0 +1,188 @@
+/* Creates a border around the boxes */
+.initialize-boxes div{
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+/* Creates a flexbox of the box-container. 
+The content of the container will be flexed */
+.initialize-container {
+    display: flex;
+}
+/* Spacing around buttons */
+.buttons button{
+    margin: 0px 0px 10px 0px;
+}
+
+/* ------------------------ Flexbox 1 --------------------------- */
+/* Horizontal flex of the flexbox. "The box is aligned in one row" */
+.flex-direction-row {
+    flex-direction: row;
+}
+/* Horizontal flex of the flexbox, but the content is reversed */
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+/* Vertical flex of the flexbox. "The box is aligned in one one column" */
+.flex-direction-column {
+    flex-direction: column;
+}
+/* Vertical flex of the flexbox, but the content is reversed */
+.flex-direction-column-reverse{
+    flex-direction: column-reverse;
+}
+
+/* ------------------ Flexbox 2 -------------------------- */
+/* Sets the content of flexbox to align at the start of the flexbox  */
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+/* Aligns the content of the flexbox at the end of the flexbox */
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+/* Aligns the content of the box in the center of the flexbox */
+.justify-content-center{
+    justify-content: center;
+}
+/* put spaces on both sides of all the elements in the flexbox */
+.justify-content-space-around {
+    justify-content: space-around;
+}
+/* Align the first element in the flexbox to the start of the flexbox. 
+    The last element in the box is aligned to the end of the flexbox.
+    All other elements have equal space between them*/
+.justify-content-space-between {
+    justify-content: space-between;
+}
+/* There is an equal amount of space between every element in the flexbox */
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* ------------------------- Flexbox 3 --------------------- */
+/* The flex box does not wrap around when there is no more space in the box*/
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+/* The content of the flexbox will wrap around to a new line when there is no more space in the box */
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+/* The content of the flexbox will wrap, however each new line of wrapped content will have a reversed order*/
+.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+/* ---------------------------- Flexbox4 ------------------------------ */
+#box-container4 {
+    height: 300px;
+    border: 2px dotted black;
+    flex-wrap: wrap;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+.align-items-flex-start {
+    align-items: flex-start;
+}
+.align-items-flex-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+
+/* ---------------------------- Flexbox5 ------------------------------ */
+#align-items-vs-align-content-title{
+    display: flex;
+    justify-content: space-around;
+}
+.initialize-parent-flexbox{
+    display: flex;    
+    justify-content: space-around; 
+}
+.initialize-child-flexbox {
+    display: flex;
+    border: 2px dotted black;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 350px;
+    justify-content: space-evenly;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+.align-content-flex-start{
+    align-content: flex-start;
+}
+.align-content-flex-end {
+    align-content: flex-end;
+}
+.align-content-center {
+    align-content: center;
+}
+
+/* ------------------------------- Flexbox6 ---------------------- */
+#box-container6 {
+    border: 2px dotted black; 
+    width: 350px;
+    height: 600px;   
+    flex-wrap: wrap;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}
+.align-content-space-between {
+    align-content: space-between;
+}
+
+/* ------------------------------ Flexbox7 ----------------------- */
+#box-container7, #box-container8, #box-container9 {
+    border: 2px dotted black;
+    height: 250px;
+    margin-bottom: 20px;
+}
+/* Aligns this box to the top of the flexbox */
+#flexbox7-box1 {
+    align-self: flex-start;
+}
+/* Aligns this box at the center of the flexbox */
+#flexbox7-box2 {
+    align-self: center;
+}
+/* Aligns this box at the bottom of the flexbox */
+#flexbox7-box3 {
+    align-self: flex-end;
+}
+
+/* Defines the relative growth of the three flexbox items */
+#flexbox8-box1 {
+    flex-grow: 1;
+}
+#flexbox8-box2 {
+    flex-grow: 1;
+}
+/* The third box grows double as fast as box1 and box2 */
+#flexbox8-box3 {
+    flex-grow: 2;
+}
+
+/* Sets the with of the element to be 600px */
+#flexbox9-box1{
+    flex-basis: 600px;
+}
+
+/* Defines the order of the items in the flexbox */
+#flexbox10-box1{
+    order: 3;
+}
+#flexbox10-box2{
+    order: 2;
+}
+#flexbox10-box3{
+    order: 1;
+}
+

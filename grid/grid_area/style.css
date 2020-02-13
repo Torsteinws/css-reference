@@ -1,0 +1,52 @@
+.initialize-grid {
+    display: grid;
+    border: 2px dotted black;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.initialize-grid-items div{
+    border: 1px solid black;
+    text-align: center;
+}
+.button-layout button{
+    margin: 0px 5px 20px 0px;
+}
+
+/* ------------------------- Grid-area 1 ---------------------- */
+#grid1{
+    height: 700px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px 150px;
+}
+
+.grid-area-1-1-3-3{
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-area-1-1-span-3-span-3{
+    grid-area: 1 / 1 / span 3 / span 3;
+}
+
+/* ------------------------- Grid-area 2 ---------------------- */
+
+/* Defines the myGridArea and binds it to item 1 in grid 2 */
+#grid2-item1 {
+    grid-area: myGridArea;
+}
+
+
+.grid-template-areas1 {
+    grid-template-areas: 'myGridArea myGridArea myGridArea myGridArea';
+}
+.grid-template-areas2 {
+    grid-template-areas: 'myGridArea myGridArea . .';
+}
+.grid-template-areas3 {
+    grid-template-areas: 'myGridArea myGridArea . .' 'myGridArea myGridArea . .';
+}
+.grid-template-areas4 {
+    grid-template-areas: 'myGridArea myGridArea . .' 'myGridArea myGridArea . .' 'myGridArea myGridArea . .';
+}
+
+

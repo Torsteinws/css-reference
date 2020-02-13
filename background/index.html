@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>General css</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h3>Background</h3>
+    <p>Original picture:</p>
+    <img src="/images/forohmingen.jpg"  width="600px"/>
+    <p>Here is a background container:</p>
+    <div class="container" id="background-container">
+        <h3>Hello World</h3>
+        <p>Here is some dummy text</p>
+    </div>
+    <h3>Background-size:</h3>   
+    <button id="reset-size-button">Reset size</button> <br/>
+    <button id="background-size-auto-button">bacground-size: auto</button>
+    <button id="background-size-contain-button">bacground-size: contain</button>
+    <button id="background-size-cover-button">bacground-size: cover</button>
+    <button id="background-size-200-200-button">bacground-size: 200px 200px</button>
+
+    <ul>
+        <li><b>Contain</b> will 0000</li>
+    </ul>
+
+    <h3>Background-repeat:</h3>
+    <button id="reset-repeat-button">Reset repeat</button> <br/>
+    <button id="background-no-repeat-button">background-repeat: no-repeat</button>
+    <button id="background-repeat-button">background-repeat: repeat</button>
+    <button id="background-repeat-x-button">background-repeat: repeat-x</button>
+    <button id="background-repeat-y-button">background-repeat: repeat-y</button>
+    
+    <h3>Background-position:</h3>
+    <button id="reset-position-button">Reset position</button> <br/>
+    <button id="background-position-center-button">background-position: center</button>
+    <button id="background-position-left-button">background-position: left</button>
+    <button id="background-position-right-button">background-position: right</button>
+    <button id="background-position-top-button">background-position: top</button>
+    <button id="background-position-bottom-button">background-position: bottom</button>
+    <ul>
+        <li><b>NB:</b> These buttons will override eachother. It is not possible to combine "top" and "right" to get "top right"</li>
+        <li>By default the background position is "top left"</li>
+    </ul>
+
+    <h3>Background attachment</h3>
+    <button id="reset-attachment-button" >Reset attachment</button> <br/>
+    <button id="background-attachment-scroll-button" >background-attachment: scroll</button>
+    <button id="background-attachment-fixed-button" >background-attachment: fixed</button>
+    <ul>
+        <li>Scroll is default. The image is scrolled down with the same amount as the scroll bar</li>
+        <li>The fixed property makes the image stay fixed in one location, eventhough the window is scrolling down.</li>
+    </ul>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--------------------Flexbox 1 --------------------------->
+    <h2>Flexbox 1: flex-direction</h2>
+    <div id="button-container1" class="buttons">
+        <button id="flexRowButton">flex-direction: row</button>
+        <button id="flexRowReverseButton">flex-direction: row-reverse</button>
+        <button id="flexColumnButton">flex-direction: column</button>
+        <button id="flexColumnReverseButton">flex-direction: column-reverse</button>
+    </div>
+    <div class="initialize-boxes initialize-container" id="box-container1">
+        <div>
+            <h3>Box one</h3>
+            <p>Lorem Ipsum is simply dummy text of the 
+                printing and typesetting industry.</p>
+        </div>
+        <div>
+            <h3>Box two</h3>
+            <p>Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s, when an unknown 
+                printer took a galley of type and scrambled 
+                it to make a type specimen book.</p>
+        </div>
+        <div>
+            <h3>Box three</h3>
+            <p>It has survived not only five centuries, but also 
+                the leap into electronic typesetting, remaining 
+                essentially unchanged. It was popularised in the 
+                1960s with the release of Letraset sheets containing 
+                Lorem Ipsum passages, and more recently with desktop 
+                publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+    <hr>
+    <!------------------------- Flexbox2 ------------------->
+    <h2>Flexbox 2: justify-content</h2>
+    <div id="button-container2" class="buttons">
+        <button id="justifyContentFlexStartButton">justify-content: flex-start</button>
+        <button id="justifyContentFlexEndButton">justify-content: flex-end</button>
+        <button id="justifyContentCenterButton">justify-content: center</button>
+        <button id="justifyContentSpaceAroundButton">justify-content: space-around</button>
+        <button id="justifyContentSpaceBetweenButton">justify-content: space-between</button>
+        <button id="justifyContentSpaceEvenlyButton">justify-content: space-evenly</button>
+    </div>
+    <div class="initialize-boxes initialize-container" id="box-container2">
+        <div>
+            <h3>Box one</h3>
+            <p>1</p>
+        </div>
+        <div>
+            <h3>Box two</h3>
+            <p>2</p>
+        </div>
+        <div>
+            <h3>Box three</h3>
+            <p>3</p>
+        </div>
+    </div>
+    <hr>
+
+    <!------------------------- Flexbox3 ------------------->
+    <h2>Flexbox 3: flex-wrap</h2>
+    <div id="button-container3" class="buttons">
+        <button id="flexNoWrapButton">flex-wrap: nowrap</button>
+        <button id="flexWrapButton">flex-wrap: wrap</button>
+        <button id="flexWrapReverseButton">flex-wrap: wrap-reverse</button>
+    </div>
+    <div class="initialize-boxes initialize-container" id="box-container3">
+        <div>
+            <h3>Box one</h3>
+            <p>1</p>
+        </div>
+        <div>
+            <h3>Box two</h3>
+            <p>2</p>
+        </div>
+        <div>
+            <h3>Box three</h3>
+            <p>3</p>
+        </div>
+        <div>
+            <h3>Box four</h3>
+            <p>4</p>
+        </div>
+        <div>
+            <h3>Box five</h3>
+            <p>5</p>
+        </div>
+        <div>
+            <h3>Box six</h3>
+            <p>6</p>
+        </div>
+        <div>
+            <h3>Box seven</h3>
+            <p>7</p>
+        </div>
+        <div>
+            <h3>Box eight</h3>
+            <p>8</p>
+        </div>
+        <div>
+            <h3>Box nine</h3>
+            <p>9</p>
+        </div>
+        <div>
+            <h3>Box ten</h3>
+            <p>10</p>
+        </div>
+        <div>
+            <h3>Box eleven</h3>
+            <p>11</p>
+        </div>
+        <div>
+            <h3>Box twelve</h3>
+            <p>12</p>
+        </div>
+    </div>
+    <hr>
+
+    <!------------------------- Flexbox4 ------------------->
+    <h2>Flexbox 4: align-items</h2>
+    <div id="button-container4" class="buttons">
+       <button id="alignItemsStretchButton">align-items: stretch</button>
+       <button id="alignItemsFlexStartButton">align-items: flex-start</button>
+       <button id="alignItemsFlexEndButton">align-items: flex-end</button>
+       <button id="alignItemsCenterButton">align-items: center</button>
+    </div>
+    The stapled lines are the borders of the flexbox:
+    <div class="initialize-boxes initialize-container" id="box-container4">
+        <div>
+            <h3>Box one</h3>
+            <p>1</p>
+        </div>
+        <div>
+            <h3>Box two</h3>
+            <p>2</p>
+        </div>
+        <div>
+            <h3>Box three</h3>
+            <p>3</p>
+        </div>
+    </div>
+    <hr>
+
+    <!------------------------- Flexbox5 ------------------->
+    <h2>Flexbox 5: align-items vs align-content</h2>
+    These buttons illustrate the difference between align-items and align-content. 
+    The text in these buttons can be set as a property to both align-items and align-content.
+    <div id="button-container5" class="buttons">
+        <button id="stretchButton">stretch</button>
+        <button id="flexStartButton">flex-start</button>
+        <button id="flexEndButton">flex-end</button>
+        <button id="centerButton">center</button>
+    </div>
+    <div id="align-items-vs-align-content-title">
+        <h3>align-items</h3>
+        <h3>align-content</h3>
+    </div>
+    The stapled lines are the borders of the flexbox
+    <div id="parent-flexbox" class="initialize-parent-flexbox">
+        <div class="initialize-boxes initialize-child-flexbox" id="child-flexbox1">
+            <div>
+                <h3>Box one</h3>
+                <p>1</p>
+            </div>
+            <div>
+                <h3>Box two</h3>
+                <p>2</p>
+            </div>
+            <div>
+                <h3>Box three</h3>
+                <p>3</p>
+            </div>
+            <div>
+                <h3>Box four</h3>
+                <p>4</p>
+            </div>
+            <div>
+                <h3>Box five</h3>
+                <p>5</p>
+            </div>
+            <div>
+                <h3>Box six</h3>
+                <p>6</p>
+            </div>
+            <div>
+                <h3>Box seven</h3>
+                <p>7</p>
+            </div>
+            <div>
+                <h3>Box eight</h3>
+                <p>8</p>
+            </div>
+            <div>
+                <h3>Box nine</h3>
+                <p>9</p>
+            </div>
+        </div>
+        <div class="initialize-boxes initialize-child-flexbox" id="child-flexbox2">
+            <div>
+                <h3>Box one</h3>
+                <p>1</p>
+            </div>
+            <div>
+                <h3>Box two</h3>
+                <p>2</p>
+            </div>
+            <div>
+                <h3>Box three</h3>
+                <p>3</p>
+            </div>
+            <div>
+                <h3>Box four</h3>
+                <p>4</p>
+            </div>
+            <div>
+                <h3>Box five</h3>
+                <p>5</p>
+            </div>
+            <div>
+                <h3>Box six</h3>
+                <p>6</p>
+            </div>
+            <div>
+                <h3>Box seven</h3>
+                <p>7</p>
+            </div>
+            <div>
+                <h3>Box eight</h3>
+                <p>8</p>
+            </div>
+            <div>
+                <h3>Box nine</h3>
+                <p>9</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!------------------------- Flexbox6 ------------------->
+    <h2>Flexbox 6: align-content</h2>
+    <div id="button-container6" class="buttons">
+       <button id="alignContentStretchButton">align-content: stretch</button>
+       <button id="alignContentSpaceAroundButton">align-content: space-around</button>
+       <button id="alignContentSpaceBetweenButton">align-content: space-between</button>
+    </div>
+    The stapled lines are the borders of the flexbox:
+    <div class="initialize-boxes initialize-container" id="box-container6">
+        <div>
+            <h3>Box one</h3>
+            <p>1</p>
+        </div>
+        <div>
+            <h3>Box two</h3>
+            <p>2</p>
+        </div>
+        <div>
+            <h3>Box three</h3>
+            <p>3</p>
+        </div>
+        <div>
+            <h3>Box four</h3>
+            <p>4</p>
+        </div>
+        <div>
+            <h3>Box five</h3>
+            <p>5</p>
+        </div>
+        <div>
+            <h3>Box six</h3>
+            <p>6</p>
+        </div>
+        <div>
+            <h3>Box seven</h3>
+            <p>7</p>
+        </div>
+        <div>
+            <h3>Box eight</h3>
+            <p>8</p>
+        </div>
+        <div>
+            <h3>Box nine</h3>
+            <p>9</p>
+        </div>
+    </div>
+    <hr>
+
+    <!--------------------------- Flexbox7 ------------------------------------->
+    <h2>Flexbox 7: porperties for items in a flexbox container</h2>
+    <ol>
+        <li><strong>Box one:</strong> align-self: flex-start;</li>
+        <li><strong>Box two:</strong> align-self: center;</li>
+        <li><strong>Box three:</strong> align-self: flex-end;</li>
+    </ol>
+    </div>
+    <div class="initialize-boxes initialize-container" id="box-container7">
+        <div id="flexbox7-box1" >
+            <h3>Box one</h3>
+            <p>1</p>
+        </div>
+        <div id="flexbox7-box2" >
+            <h3>Box two</h3>
+            <p>2</p>
+        </div>
+        <div id="flexbox7-box3" >
+            <h3>Box three</h3>
+            <p>3</p>
+        </div>
+    </div>
+</div>
+
+<p>flex-grow defines how fast an item will grow when the window size changes.
+    In this flexbox the third box is set to grow double as fast as box one and two. 
+    However, the property only describes the rate of growth. 
+    Say that box 1 had more content, both box 2 and 3 would shrink. 
+    <strong>flex-shrink works the same way</strong>
+<ol>
+        <li><strong>Box one:</strong> flex-grow: 1;</li>
+        <li><strong>Box two:</strong> flex-grow: 1;</li>
+        <li><strong>Box three:</strong> flex-grow: 2;</li>
+    </ol>
+</p>
+<div class="initialize-boxes initialize-container" id="box-container8">
+    <div id="flexbox8-box1" >
+        <h3></h3>
+        <p>1</p>
+    </div>
+    <div id="flexbox8-box2" >
+        <h3></h3>
+        <p>2</p>
+    </div>
+    <div id="flexbox8-box3" >
+        <h3></h3>
+        <p>3</p>
+    </div>
+</div>
+<p>
+    <strong>flex-basis: 600px;</strong> <br>
+    This box is defined to have an initial length of 600 pixels.
+</p>
+<div class="initialize-boxes initialize-container" id="box-container9">
+    <div id="flexbox9-box1" >
+        <h3></h3>
+        <p>1</p>
+    </div>
+</div>
+
+<p>
+    The order of these items in the html code is: box one, box two, box three <br>
+    However, the order is redefined in the css with the <strong>order: &lt value &gt </strong> property. 
+    The folowing properties are applied to the three items below:
+    <ol>
+        <li> <strong>Box one:</strong> order: 3</li>
+        <li> <strong>Box two:</strong> order: 2</li>
+        <li> <strong>Box three:</strong> order: 1</li>
+    </ol>
+</p>
+<div class="initialize-boxes initialize-container" id="box-container10">
+    <div id="flexbox10-box1">
+        <h3>Box one</h3>
+        <p>1</p>
+    </div>
+    <div id="flexbox10-box2">
+        <h3>Box two</h3>
+        <p>2</p>
+    </div>
+    <div id="flexbox10-box3">
+        <h3>Box three</h3>
+        <p>3</p>
+    </div>
+</div>
+<hr>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,48 @@
+/* When with and heigh is assigned it is also calculated with margin and padding */
+* {
+    box-sizing: border-box;
+}
+button {
+    margin: 10px 10px 0px 0px;
+}
+/* --------------------- content ------------------------ */
+.lorem-ipsum-container {
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 0px 20px;  
+    height: 200px;
+}
+#overflow-container {
+    border: 1px solid black;
+    height: 500px;
+}
+#batman-image{
+    height: 250px;
+}
+
+/* --------------------- overflow clases ----------------- */
+.overflow-y-visible {
+    overflow-y: visible;
+}
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+/* --------------------- float clases ----------------- */
+.float-none {
+    float: none;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+/* --------------------- display inline block ----------------- */
